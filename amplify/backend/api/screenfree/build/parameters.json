@@ -1,0 +1,6 @@
+{
+    "AppSyncApiName": "screenfree",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "S3DeploymentBucket": "screenfree-env-20190531115653-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/cf6fa2659844ce6e682714567492dd146738d0ab"
+}

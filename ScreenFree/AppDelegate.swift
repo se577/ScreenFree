@@ -7,15 +7,49 @@
 //
 
 import UIKit
+import AWSCognitoIdentityProvider
+import AWSPinpoint
+import AWSMobileClient
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
+    var signInViewController: SignInViewController?
+    var navigationController: UINavigationController?
+    var storyboard: UIStoryboard?
+    var rememberDeviceCompletionSource: AWSTaskCompletionSource<NSNumber>?
+     var pinpoint: AWSPinpoint?
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Initialize Pinpoint
+        pinpoint = AWSPinpoint(configuration:
+            AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
+        
+
+        
+        // setup logging
+        AWSDDLog.sharedInstance.logLevel = .verbose
+        
+        // setup service configuration
+        let serviceConfiguration = AWSServiceConfiguration(region: CognitoIdentityUserPoolRegion, credentialsProvider: nil)
+        
+        // create pool configuration
+        let poolConfiguration = AWSCognitoIdentityUserPoolConfiguration(clientId: CognitoIdentityUserPoolAppClientId,
+                                                                        clientSecret: CognitoIdentityUserPoolAppClientSecret,
+                                                                        poolId: CognitoIdentityUserPoolId)
+        
+        // initialize user pool client
+        AWSCognitoIdentityUserPool.register(with: serviceConfiguration, userPoolConfiguration: poolConfiguration, forKey: AWSCognitoUserPoolsSignInProviderKey)
+        
+        // fetch the user pool client we initialized in above step
+        let pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
+        self.storyboard = UIStoryboard(name: "Main", bundle: nil)
+        pool.delegate = self
+        
         return true
     }
 
@@ -43,4 +77,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
+//AWS Cognito
+
+extension AppDelegate: AWSCognitoIdentityInteractiveAuthenticationDelegate {
+    
+    func startPasswordAuthentication() -> AWSCognitoIdentityPasswordAuthentication {
+        if (self.navigationController == nil) {
+            self.navigationController = self.storyboard?.instantiateViewController(withIdentifier: "signinController") as? UINavigationController
+        }
+        
+        if (self.signInViewController == nil) {
+            self.signInViewController = self.navigationController?.viewControllers[0] as? SignInViewController
+        }
+        
+        DispatchQueue.main.async {
+            self.navigationController!.popToRootViewController(animated: true)
+            if (!self.navigationController!.isViewLoaded
+                || self.navigationController!.view.window == nil) {
+                self.window?.rootViewController?.present(self.navigationController!,
+                                                         animated: true,
+                                                         completion: nil)
+            }
+            
+        }
+        return self.signInViewController!
+    }
+}
+
 

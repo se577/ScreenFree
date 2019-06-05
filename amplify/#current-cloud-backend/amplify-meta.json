@@ -1,0 +1,32 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "screenfree-env-20190531115653-authRole",
+			"UnauthRoleArn": "arn:aws:iam::922239455418:role/screenfree-env-20190531115653-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::922239455418:role/screenfree-env-20190531115653-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "screenfree-env-20190531115653-deployment",
+			"UnauthRoleName": "screenfree-env-20190531115653-unauthRole",
+			"StackName": "screenfree-env-20190531115653",
+			"StackId": "arn:aws:cloudformation:us-east-1:922239455418:stack/screenfree-env-20190531115653/b5fdf300-83bc-11e9-a823-12f81177eb92"
+		}
+	},
+	"api": {
+		"screenfree": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "ewb5svcffjhy5lovd7xqne355y",
+				"GraphQLAPIEndpointOutput": "https://zm5cwf32djaepgcjinfpr6uhrm.appsync-api.us-east-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-tddqvmnmzzbadl3vs3lqxb4bbi"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/screenfree-env-20190531115653-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiscreenfree"
+			},
+			"lastPushTimeStamp": "2019-05-31T16:03:09.362Z",
+			"lastPushDirHash": "nOF0ZBKxcCQDmY+H1afSisEN4RI="
+		}
+	}
+}

@@ -1,0 +1,4 @@
+{
+    "AppSyncApiName": "screenfree",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST"
+}

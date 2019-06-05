@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BA195498F15BA951F480085 /* Pods_ScreenFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C5835988A10B2DA54B44E5 /* Pods_ScreenFree.framework */; };
 		A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15B722A1812500405E44 /* AppDelegate.swift */; };
-		A15C15BA22A1812500405E44 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15B922A1812500405E44 /* FirstViewController.swift */; };
-		A15C15BC22A1812500405E44 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15BB22A1812500405E44 /* SecondViewController.swift */; };
 		A15C15BF22A1812500405E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15BD22A1812500405E44 /* Main.storyboard */; };
 		A15C15C122A1812500405E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C022A1812500405E44 /* Assets.xcassets */; };
 		A15C15C422A1812500405E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C222A1812500405E44 /* LaunchScreen.storyboard */; };
 		A15C15CF22A1812600405E44 /* ScreenFreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15CE22A1812600405E44 /* ScreenFreeTests.swift */; };
 		A15C15DA22A1812600405E44 /* ScreenFreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15D922A1812600405E44 /* ScreenFreeUITests.swift */; };
+		A18B833E22A479FE006C6B48 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B833D22A479FE006C6B48 /* LogoutViewController.swift */; };
+		A18B834022A48503006C6B48 /* UserDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B833F22A48502006C6B48 /* UserDetailTableViewController.swift */; };
+		A19000D922A324920080D43B /* AWSUserPoolsSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19000D822A324920080D43B /* AWSUserPoolsSignIn.framework */; };
+		A191859622A1897D00E835C5 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A191859522A1897D00E835C5 /* awsconfiguration.json */; };
+		A1ADF55822A2098F0097995A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55722A2098F0097995A /* SignUpViewController.swift */; };
+		A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55922A209D90097995A /* SignInViewController.swift */; };
+		A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */; };
+		A1ADF56222A239080097995A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF56122A239080097995A /* Constants.swift */; };
+		B2F1513F463D5F7E00D1F1AB /* Pods_ScreenFreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638B35A4B9A7AB7F2F67E07A /* Pods_ScreenFreeTests.framework */; };
+		B825A04E1C99FCB570E025E1 /* Pods_ScreenFreeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D38BB9C2CB6CC2AF6300AB /* Pods_ScreenFreeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101C9846F2F00A4AA9F9BD8C /* Pods-ScreenFreeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeUITests.debug.xcconfig"; path = "Target Support Files/Pods-ScreenFreeUITests/Pods-ScreenFreeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D592502F34632545009D851 /* Pods-ScreenFreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeTests.release.xcconfig"; path = "Target Support Files/Pods-ScreenFreeTests/Pods-ScreenFreeTests.release.xcconfig"; sourceTree = "<group>"; };
+		638B35A4B9A7AB7F2F67E07A /* Pods_ScreenFreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6BE8CA659FEF8C52F68C7B /* Pods-ScreenFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFree.debug.xcconfig"; path = "Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig"; sourceTree = "<group>"; };
+		99D38BB9C2CB6CC2AF6300AB /* Pods_ScreenFreeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFreeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B422A1812500405E44 /* ScreenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B722A1812500405E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A15C15B922A1812500405E44 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A15C15BB22A1812500405E44 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A15C15BE22A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A15C15C022A1812500405E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A15C15C322A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,18 @@
 		A15C15D522A1812600405E44 /* ScreenFreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenFreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15D922A1812600405E44 /* ScreenFreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFreeUITests.swift; sourceTree = "<group>"; };
 		A15C15DB22A1812600405E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18B833D22A479FE006C6B48 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		A18B833F22A48502006C6B48 /* UserDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewController.swift; sourceTree = "<group>"; };
+		A19000D822A324920080D43B /* AWSUserPoolsSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSUserPoolsSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A191859522A1897D00E835C5 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		A1ADF55722A2098F0097995A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A1ADF55922A209D90097995A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
+		A1ADF56122A239080097995A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C75E3B1DE92823EA0FAA9C8E /* Pods-ScreenFreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeTests.debug.xcconfig"; path = "Target Support Files/Pods-ScreenFreeTests/Pods-ScreenFreeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2C5835988A10B2DA54B44E5 /* Pods_ScreenFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61E5B0EF20F4A837420F5B5 /* Pods-ScreenFreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeUITests.release.xcconfig"; path = "Target Support Files/Pods-ScreenFreeUITests/Pods-ScreenFreeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F723DE4337B7587B53D0DBAC /* Pods-ScreenFree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFree.release.xcconfig"; path = "Target Support Files/Pods-ScreenFree/Pods-ScreenFree.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19000D922A324920080D43B /* AWSUserPoolsSignIn.framework in Frameworks */,
+				9BA195498F15BA951F480085 /* Pods_ScreenFree.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F1513F463D5F7E00D1F1AB /* Pods_ScreenFreeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +97,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B825A04E1C99FCB570E025E1 /* Pods_ScreenFreeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C7DF1A2F28EDED7D9D89D91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6BE8CA659FEF8C52F68C7B /* Pods-ScreenFree.debug.xcconfig */,
+				F723DE4337B7587B53D0DBAC /* Pods-ScreenFree.release.xcconfig */,
+				C75E3B1DE92823EA0FAA9C8E /* Pods-ScreenFreeTests.debug.xcconfig */,
+				3D592502F34632545009D851 /* Pods-ScreenFreeTests.release.xcconfig */,
+				101C9846F2F00A4AA9F9BD8C /* Pods-ScreenFreeUITests.debug.xcconfig */,
+				F61E5B0EF20F4A837420F5B5 /* Pods-ScreenFreeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A15C15AB22A1812500405E44 = {
 			isa = PBXGroup;
 			children = (
+				A191859522A1897D00E835C5 /* awsconfiguration.json */,
 				A15C15B622A1812500405E44 /* ScreenFree */,
 				A15C15CD22A1812600405E44 /* ScreenFreeTests */,
 				A15C15D822A1812600405E44 /* ScreenFreeUITests */,
 				A15C15B522A1812500405E44 /* Products */,
+				4C7DF1A2F28EDED7D9D89D91 /* Pods */,
+				C008F8D64E89DA19092C007A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +143,14 @@
 		A15C15B622A1812500405E44 /* ScreenFree */ = {
 			isa = PBXGroup;
 			children = (
-				A15C15B722A1812500405E44 /* AppDelegate.swift */,
-				A15C15B922A1812500405E44 /* FirstViewController.swift */,
-				A15C15BB22A1812500405E44 /* SecondViewController.swift */,
 				A15C15BD22A1812500405E44 /* Main.storyboard */,
+				A15C15B722A1812500405E44 /* AppDelegate.swift */,
+				A18B833F22A48502006C6B48 /* UserDetailTableViewController.swift */,
+				A18B833D22A479FE006C6B48 /* LogoutViewController.swift */,
+				A1ADF55722A2098F0097995A /* SignUpViewController.swift */,
+				A1ADF55922A209D90097995A /* SignInViewController.swift */,
+				A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */,
+				A1ADF56122A239080097995A /* Constants.swift */,
 				A15C15C022A1812500405E44 /* Assets.xcassets */,
 				A15C15C222A1812500405E44 /* LaunchScreen.storyboard */,
 				A15C15C522A1812500405E44 /* Info.plist */,
@@ -128,6 +176,17 @@
 			path = ScreenFreeUITests;
 			sourceTree = "<group>";
 		};
+		C008F8D64E89DA19092C007A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A19000D822A324920080D43B /* AWSUserPoolsSignIn.framework */,
+				F2C5835988A10B2DA54B44E5 /* Pods_ScreenFree.framework */,
+				638B35A4B9A7AB7F2F67E07A /* Pods_ScreenFreeTests.framework */,
+				99D38BB9C2CB6CC2AF6300AB /* Pods_ScreenFreeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A15C15DE22A1812600405E44 /* Build configuration list for PBXNativeTarget "ScreenFree" */;
 			buildPhases = (
+				C05E4D5FDC4818D0EC1CC114 /* [CP] Check Pods Manifest.lock */,
 				A15C15B022A1812500405E44 /* Sources */,
 				A15C15B122A1812500405E44 /* Frameworks */,
 				A15C15B222A1812500405E44 /* Resources */,
+				D14429A263EF6133152D5E78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A15C15E122A1812600405E44 /* Build configuration list for PBXNativeTarget "ScreenFreeTests" */;
 			buildPhases = (
+				293203A38FBEE0C0988B0479 /* [CP] Check Pods Manifest.lock */,
 				A15C15C622A1812600405E44 /* Sources */,
 				A15C15C722A1812600405E44 /* Frameworks */,
 				A15C15C822A1812600405E44 /* Resources */,
@@ -170,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A15C15E422A1812600405E44 /* Build configuration list for PBXNativeTarget "ScreenFreeUITests" */;
 			buildPhases = (
+				E825DBF49A911B96A5B25A44 /* [CP] Check Pods Manifest.lock */,
 				A15C15D122A1812600405E44 /* Sources */,
 				A15C15D222A1812600405E44 /* Frameworks */,
 				A15C15D322A1812600405E44 /* Resources */,
@@ -232,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A191859622A1897D00E835C5 /* awsconfiguration.json in Resources */,
 				A15C15C422A1812500405E44 /* LaunchScreen.storyboard in Resources */,
 				A15C15C122A1812500405E44 /* Assets.xcassets in Resources */,
 				A15C15BF22A1812500405E44 /* Main.storyboard in Resources */,
@@ -254,14 +318,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		293203A38FBEE0C0988B0479 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenFreeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05E4D5FDC4818D0EC1CC114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenFree-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D14429A263EF6133152D5E78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenFree/Pods-ScreenFree-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScreenFree/Pods-ScreenFree-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScreenFree/Pods-ScreenFree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E825DBF49A911B96A5B25A44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenFreeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A15C15B022A1812500405E44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15C15BC22A1812500405E44 /* SecondViewController.swift in Sources */,
+				A18B834022A48503006C6B48 /* UserDetailTableViewController.swift in Sources */,
+				A18B833E22A479FE006C6B48 /* LogoutViewController.swift in Sources */,
+				A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */,
+				A1ADF55822A2098F0097995A /* SignUpViewController.swift in Sources */,
 				A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */,
-				A15C15BA22A1812500405E44 /* FirstViewController.swift in Sources */,
+				A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */,
+				A1ADF56222A239080097995A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +588,7 @@
 		};
 		A15C15DF22A1812600405E44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6BE8CA659FEF8C52F68C7B /* Pods-ScreenFree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,12 +601,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TrickStewart.ScreenFree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A15C15E022A1812600405E44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F723DE4337B7587B53D0DBAC /* Pods-ScreenFree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,12 +620,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TrickStewart.ScreenFree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		A15C15E222A1812600405E44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75E3B1DE92823EA0FAA9C8E /* Pods-ScreenFreeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +648,7 @@
 		};
 		A15C15E322A1812600405E44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D592502F34632545009D851 /* Pods-ScreenFreeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +670,7 @@
 		};
 		A15C15E522A1812600405E44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101C9846F2F00A4AA9F9BD8C /* Pods-ScreenFreeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +691,7 @@
 		};
 		A15C15E622A1812600405E44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61E5B0EF20F4A837420F5B5 /* Pods-ScreenFreeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
