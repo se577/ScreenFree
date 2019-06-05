@@ -21,16 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var rememberDeviceCompletionSource: AWSTaskCompletionSource<NSNumber>?
      var pinpoint: AWSPinpoint?
     
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // Initialize Pinpoint
         pinpoint = AWSPinpoint(configuration:
             AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
-        
-
-        
+                
         // setup logging
         AWSDDLog.sharedInstance.logLevel = .verbose
         

@@ -21,7 +21,7 @@
                 "GraphQLAPIEndpointOutput": "https://zm5cwf32djaepgcjinfpr6uhrm.appsync-api.us-east-1.amazonaws.com/graphql",
                 "GraphQLAPIKeyOutput": "da2-tddqvmnmzzbadl3vs3lqxb4bbi"
             },
-            "lastPushTimeStamp": "2019-06-05T02:53:10.212Z",
+            "lastPushTimeStamp": "2019-06-05T23:02:50.929Z",
             "providerMetadata": {
                 "s3TemplateURL": "https://s3.amazonaws.com/screenfree-env-20190531115653-deployment/amplify-cfn-templates/api/cloudformation-template.json",
                 "logicalId": "apiscreenfree"
