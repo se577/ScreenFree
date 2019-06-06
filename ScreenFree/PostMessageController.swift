@@ -46,11 +46,12 @@ class PostMessageController: UIViewController{
         
         let notesItem: MyNotes = MyNotes()
         
-        notesItem._userId = credentialsProvider.identityId
+        notesItem._userId = "1234"
         
         notesItem._noteId = self.noteIdInput.text
         notesItem._title = self.messagetitleInput.text
         notesItem._content = self.contentInput.text
+        notesItem._creationDate = 12
     
         //Save a new item
         dynamoDbObjectMapper.save(notesItem, completionHandler: {
