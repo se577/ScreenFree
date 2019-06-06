@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9BA195498F15BA951F480085 /* Pods_ScreenFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C5835988A10B2DA54B44E5 /* Pods_ScreenFree.framework */; };
+		A10CA36622A899740069F2A4 /* PostMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10CA36522A899740069F2A4 /* PostMessageController.swift */; };
+		A10CA36A22A8AE260069F2A4 /* MyNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10CA36922A8AE260069F2A4 /* MyNotes.swift */; };
 		A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15B722A1812500405E44 /* AppDelegate.swift */; };
 		A15C15BF22A1812500405E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15BD22A1812500405E44 /* Main.storyboard */; };
 		A15C15C122A1812500405E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C022A1812500405E44 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		638B35A4B9A7AB7F2F67E07A /* Pods_ScreenFreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6BE8CA659FEF8C52F68C7B /* Pods-ScreenFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFree.debug.xcconfig"; path = "Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig"; sourceTree = "<group>"; };
 		99D38BB9C2CB6CC2AF6300AB /* Pods_ScreenFreeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFreeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10CA36522A899740069F2A4 /* PostMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageController.swift; sourceTree = "<group>"; };
+		A10CA36922A8AE260069F2A4 /* MyNotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNotes.swift; path = "../../../Downloads/ScreenFree-integration-lib-aws-my-sample-app-ios-swift-2/AmazonAws/Models/NoSQL/MyNotes.swift"; sourceTree = "<group>"; };
 		A15C15B422A1812500405E44 /* ScreenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B722A1812500405E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15C15BE22A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				A15C15C022A1812500405E44 /* Assets.xcassets */,
 				A15C15C222A1812500405E44 /* LaunchScreen.storyboard */,
 				A15C15C522A1812500405E44 /* Info.plist */,
+				A10CA36922A8AE260069F2A4 /* MyNotes.swift */,
+				A10CA36522A899740069F2A4 /* PostMessageController.swift */,
 			);
 			path = ScreenFree;
 			sourceTree = "<group>";
@@ -253,6 +259,9 @@
 		A15C15AC22A1812500405E44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Note,
+				);
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = TrickStewart;
@@ -409,12 +418,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10CA36A22A8AE260069F2A4 /* MyNotes.swift in Sources */,
 				A18B834022A48503006C6B48 /* UserDetailTableViewController.swift in Sources */,
 				A18B833E22A479FE006C6B48 /* LogoutViewController.swift in Sources */,
 				A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */,
 				A1ADF55822A2098F0097995A /* SignUpViewController.swift in Sources */,
 				A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */,
 				A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */,
+				A10CA36622A899740069F2A4 /* PostMessageController.swift in Sources */,
 				A1ADF56222A239080097995A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

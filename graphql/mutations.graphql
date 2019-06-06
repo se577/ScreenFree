@@ -1,22 +1,8 @@
 # this is an auto generated file. This will be overwritten
-mutation CreateTodo($input: CreateTodoInput!) {
-  createTodo(input: $input) {
-    id
-    name
-    description
-  }
-}
-mutation UpdateTodo($input: UpdateTodoInput!) {
-  updateTodo(input: $input) {
-    id
-    name
-    description
-  }
-}
-mutation DeleteTodo($input: DeleteTodoInput!) {
-  deleteTodo(input: $input) {
-    id
-    name
-    description
+mutation SaveNote($noteId: ID!, $title: String!, $content: String!) {
+  saveNote(noteId: $noteId, title: $title, content: $content) {
+    noteId
+    content
+    title
   }
 }

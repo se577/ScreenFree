@@ -10,6 +10,7 @@ import UIKit
 import AWSCognitoIdentityProvider
 import AWSPinpoint
 import AWSMobileClient
+import AWSAppSync
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,17 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var navigationController: UINavigationController?
     var storyboard: UIStoryboard?
     var rememberDeviceCompletionSource: AWSTaskCompletionSource<NSNumber>?
-     var pinpoint: AWSPinpoint?
+    var PostMessageController: PostMessageController?
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        // Initialize Pinpoint
-        pinpoint = AWSPinpoint(configuration:
-            AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
-                
-        // setup logging
-        AWSDDLog.sharedInstance.logLevel = .verbose
+
         
         // setup service configuration
         let serviceConfiguration = AWSServiceConfiguration(region: CognitoIdentityUserPoolRegion, credentialsProvider: nil)

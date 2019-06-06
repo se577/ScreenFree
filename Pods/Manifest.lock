@@ -1,4 +1,8 @@
 PODS:
+  - AWSAppSync (2.13.1):
+    - AWSCore (~> 2.9.0)
+    - ReachabilitySwift (= 4.3.0)
+    - SQLite.swift (= 0.11.6)
   - AWSAuthCore (2.9.8):
     - AWSCore (= 2.9.8)
   - AWSAuthUI (2.9.8):
@@ -9,6 +13,8 @@ PODS:
     - AWSCore (= 2.9.8)
   - AWSCognitoIdentityProviderASF (1.0.1)
   - AWSCore (2.9.8)
+  - AWSDynamoDB (2.9.8):
+    - AWSCore (= 2.9.8)
   - AWSMobileClient (2.9.8):
     - AWSAuthCore (= 2.9.8)
     - AWSCognitoIdentityProvider (= 2.9.8)
@@ -17,36 +23,50 @@ PODS:
   - AWSUserPoolsSignIn (2.9.8):
     - AWSAuthCore (= 2.9.8)
     - AWSCognitoIdentityProvider (= 2.9.8)
+  - ReachabilitySwift (4.3.0)
+  - SQLite.swift (0.11.6):
+    - SQLite.swift/standard (= 0.11.6)
+  - SQLite.swift/standard (0.11.6)
 
 DEPENDENCIES:
-  - AWSAuthUI (~> 2.9.0)
-  - AWSCognitoIdentityProvider (~> 2.9.0)
-  - AWSCore (~> 2.9.0)
-  - AWSMobileClient (~> 2.9.0)
-  - AWSPinpoint (~> 2.9.0)
-  - AWSUserPoolsSignIn (~> 2.9.0)
+  - AWSAppSync
+  - AWSAuthUI
+  - AWSCognitoIdentityProvider
+  - AWSCore
+  - AWSDynamoDB
+  - AWSMobileClient
+  - AWSPinpoint
+  - AWSUserPoolsSignIn
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AWSAppSync
     - AWSAuthCore
     - AWSAuthUI
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
     - AWSCore
+    - AWSDynamoDB
     - AWSMobileClient
     - AWSPinpoint
     - AWSUserPoolsSignIn
+    - ReachabilitySwift
+    - SQLite.swift
 
 SPEC CHECKSUMS:
+  AWSAppSync: 6dd42e4c25ff01cfa652392bdc080bb9ec2b6d5f
   AWSAuthCore: 7ebbe523f28149a1706e7ec1736203cdaaeba380
   AWSAuthUI: 0f3c2c19606776ba990136ca2d2e81518eb08afe
   AWSCognitoIdentityProvider: 738b488930eca71cbaa91ac53764b146e90a6650
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
   AWSCore: 5da86c5afde44a87b06a2df50601bca81a8cee13
+  AWSDynamoDB: 92861d2f95fb6754e29a6815f605cd90dd0b27d4
   AWSMobileClient: d3b6cbe30dcdb45866c85b0d088106504f72d4a3
   AWSPinpoint: e9e2de634fc3270bbfb3f3b7b0c5aa748440b37f
   AWSUserPoolsSignIn: 127aebb7fd668b4e897063c34356f9e25a576b84
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  SQLite.swift: 46d890be8601964454bd3392527f863d1b802d45
 
-PODFILE CHECKSUM: ba2b27c793a5b1e343429ef3b7abb6143fd2c11d
+PODFILE CHECKSUM: 0a8cab33b276c4210a8800bb1a207fb23e417927
 
 COCOAPODS: 1.7.1

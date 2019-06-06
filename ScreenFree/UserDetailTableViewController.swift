@@ -66,6 +66,12 @@ class UserDetailTableViewController : UITableViewController {
         self.refresh()
     }
     
+    //@IBAction func inputNote(_ sender: AnyObject) {
+        //let homeView = self.storyboard?.instantiateViewController(withIdentifier: "PostMessageController") as! PostMessageController
+        //present(homeView, animated: true, completion: nil)
+    //}
+    
+    
     func refresh() {
         self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
             DispatchQueue.main.async(execute: {

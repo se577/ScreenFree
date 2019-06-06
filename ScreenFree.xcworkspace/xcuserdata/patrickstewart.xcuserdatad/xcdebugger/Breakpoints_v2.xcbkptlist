@@ -19,5 +19,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScreenFree/UserDetailTableViewController.swift"
+            timestampString = "581485469.8069741"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "UserDetailTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScreenFree.UserDetailTableViewController.inputNote(Swift.AnyObject) -&gt; ()"
+                  moduleName = "ScreenFree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickstewart/Desktop/ScreenFree/ScreenFree/UserDetailTableViewController.swift"
+                  timestampString = "581485133.647848"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScreenFree.UserDetailTableViewController.inputNote(Swift.AnyObject) -&gt; ()"
+                  moduleName = "ScreenFree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/patrickstewart/Desktop/ScreenFree/ScreenFree/UserDetailTableViewController.swift"
+                  timestampString = "581485133.649622"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "576">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
