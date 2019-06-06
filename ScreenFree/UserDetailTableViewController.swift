@@ -51,8 +51,8 @@ class UserDetailTableViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "attribute", for: indexPath)
         let userAttribute = self.response?.userAttributes![indexPath.row]
-        cell.textLabel?.text = userAttribute?.name
-        cell.detailTextLabel?.text = userAttribute?.value
+        cell.textLabel!.text = userAttribute?.name
+        cell.detailTextLabel!.text = userAttribute?.value
         return cell
     }
     
@@ -66,12 +66,6 @@ class UserDetailTableViewController : UITableViewController {
         self.refresh()
     }
     
-    //@IBAction func inputNote(_ sender: AnyObject) {
-        //let homeView = self.storyboard?.instantiateViewController(withIdentifier: "PostMessageController") as! PostMessageController
-        //present(homeView, animated: true, completion: nil)
-    //}
-    
-    
     func refresh() {
         self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
             DispatchQueue.main.async(execute: {
@@ -84,4 +78,5 @@ class UserDetailTableViewController : UITableViewController {
     }
     
 }
+
 
