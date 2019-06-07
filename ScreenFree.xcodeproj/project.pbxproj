@@ -10,6 +10,11 @@
 		9BA195498F15BA951F480085 /* Pods_ScreenFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C5835988A10B2DA54B44E5 /* Pods_ScreenFree.framework */; };
 		A10CA36622A899740069F2A4 /* PostMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10CA36522A899740069F2A4 /* PostMessageController.swift */; };
 		A11391E322AA8BB800EBD8FF /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11391E222AA8BB800EBD8FF /* Notes.swift */; };
+		A124F75C22AA9D9E00136705 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F75B22AA9D9E00136705 /* blockerList.json */; };
+		A124F75E22AA9D9E00136705 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F75D22AA9D9E00136705 /* ContentBlockerRequestHandler.swift */; };
+		A124F76222AA9D9E00136705 /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A124F75922AA9D9E00136705 /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A124F76922AAAF3500136705 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F75B22AA9D9E00136705 /* blockerList.json */; };
+		A124F77722AAB26400136705 /* Blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A124F76E22AAB26400136705 /* Blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15B722A1812500405E44 /* AppDelegate.swift */; };
 		A15C15BF22A1812500405E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15BD22A1812500405E44 /* Main.storyboard */; };
 		A15C15C122A1812500405E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C022A1812500405E44 /* Assets.xcassets */; };
@@ -28,6 +33,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A124F76022AA9D9E00136705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15C15AC22A1812500405E44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A124F75822AA9D9E00136705;
+			remoteInfo = ContentBlocker;
+		};
+		A124F77522AAB26400136705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15C15AC22A1812500405E44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A124F76D22AAB26400136705;
+			remoteInfo = Blocker;
+		};
 		A15C15CB22A1812600405E44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A15C15AC22A1812500405E44 /* Project object */;
@@ -44,14 +63,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A124F76622AA9D9E00136705 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A124F76222AA9D9E00136705 /* ContentBlocker.appex in Embed App Extensions */,
+				A124F77722AAB26400136705 /* Blocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		101C9846F2F00A4AA9F9BD8C /* Pods-ScreenFreeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeUITests.debug.xcconfig"; path = "Target Support Files/Pods-ScreenFreeUITests/Pods-ScreenFreeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D592502F34632545009D851 /* Pods-ScreenFreeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeTests.release.xcconfig"; path = "Target Support Files/Pods-ScreenFreeTests/Pods-ScreenFreeTests.release.xcconfig"; sourceTree = "<group>"; };
 		638B35A4B9A7AB7F2F67E07A /* Pods_ScreenFreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B6BE8CA659FEF8C52F68C7B /* Pods-ScreenFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFree.debug.xcconfig"; path = "Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig"; sourceTree = "<group>"; };
+		6B6BE8CA659FEF8C52F68C7B /* Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig"; sourceTree = "<group>"; };
 		99D38BB9C2CB6CC2AF6300AB /* Pods_ScreenFreeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFreeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10CA36522A899740069F2A4 /* PostMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageController.swift; sourceTree = "<group>"; };
 		A11391E222AA8BB800EBD8FF /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		A124F75922AA9D9E00136705 /* ContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A124F75B22AA9D9E00136705 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		A124F75D22AA9D9E00136705 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		A124F75F22AA9D9E00136705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A124F76722AAAC7C00136705 /* ScreenFree.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenFree.entitlements; sourceTree = "<group>"; };
+		A124F76822AAACC200136705 /* ContentBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlocker.entitlements; sourceTree = "<group>"; };
+		A124F76E22AAB26400136705 /* Blocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Blocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B422A1812500405E44 /* ScreenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B722A1812500405E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15C15BE22A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +119,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A124F75622AA9D9E00136705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A124F76B22AAB26400136705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A15C15B122A1812500405E44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,7 +164,7 @@
 		4C7DF1A2F28EDED7D9D89D91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6B6BE8CA659FEF8C52F68C7B /* Pods-ScreenFree.debug.xcconfig */,
+				6B6BE8CA659FEF8C52F68C7B /* Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig */,
 				F723DE4337B7587B53D0DBAC /* Pods-ScreenFree.release.xcconfig */,
 				C75E3B1DE92823EA0FAA9C8E /* Pods-ScreenFreeTests.debug.xcconfig */,
 				3D592502F34632545009D851 /* Pods-ScreenFreeTests.release.xcconfig */,
@@ -117,6 +172,17 @@
 				F61E5B0EF20F4A837420F5B5 /* Pods-ScreenFreeUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A124F75A22AA9D9E00136705 /* ContentBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				A124F76822AAACC200136705 /* ContentBlocker.entitlements */,
+				A124F75B22AA9D9E00136705 /* blockerList.json */,
+				A124F75D22AA9D9E00136705 /* ContentBlockerRequestHandler.swift */,
+				A124F75F22AA9D9E00136705 /* Info.plist */,
+			);
+			path = ContentBlocker;
 			sourceTree = "<group>";
 		};
 		A15C15AB22A1812500405E44 = {
@@ -127,6 +193,7 @@
 				A15C15CD22A1812600405E44 /* ScreenFreeTests */,
 				A15C15D822A1812600405E44 /* ScreenFreeUITests */,
 				A15C15B522A1812500405E44 /* Products */,
+				A124F75A22AA9D9E00136705 /* ContentBlocker */,
 				4C7DF1A2F28EDED7D9D89D91 /* Pods */,
 				C008F8D64E89DA19092C007A /* Frameworks */,
 			);
@@ -138,6 +205,8 @@
 				A15C15B422A1812500405E44 /* ScreenFree.app */,
 				A15C15CA22A1812600405E44 /* ScreenFreeTests.xctest */,
 				A15C15D522A1812600405E44 /* ScreenFreeUITests.xctest */,
+				A124F75922AA9D9E00136705 /* ContentBlocker.appex */,
+				A124F76E22AAB26400136705 /* Blocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +214,7 @@
 		A15C15B622A1812500405E44 /* ScreenFree */ = {
 			isa = PBXGroup;
 			children = (
+				A124F76722AAAC7C00136705 /* ScreenFree.entitlements */,
 				A15C15BD22A1812500405E44 /* Main.storyboard */,
 				A15C15B722A1812500405E44 /* AppDelegate.swift */,
 				A18B833F22A48502006C6B48 /* UserDetailTableViewController.swift */,
@@ -193,6 +263,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A124F75822AA9D9E00136705 /* ContentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A124F76522AA9D9E00136705 /* Build configuration list for PBXNativeTarget "ContentBlocker" */;
+			buildPhases = (
+				A124F75522AA9D9E00136705 /* Sources */,
+				A124F75622AA9D9E00136705 /* Frameworks */,
+				A124F75722AA9D9E00136705 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentBlocker;
+			productName = ContentBlocker;
+			productReference = A124F75922AA9D9E00136705 /* ContentBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A124F76D22AAB26400136705 /* Blocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A124F77A22AAB26400136705 /* Build configuration list for PBXNativeTarget "Blocker" */;
+			buildPhases = (
+				A124F76A22AAB26400136705 /* Sources */,
+				A124F76B22AAB26400136705 /* Frameworks */,
+				A124F76C22AAB26400136705 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blocker;
+			productName = Blocker;
+			productReference = A124F76E22AAB26400136705 /* Blocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A15C15B322A1812500405E44 /* ScreenFree */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A15C15DE22A1812600405E44 /* Build configuration list for PBXNativeTarget "ScreenFree" */;
@@ -202,10 +306,13 @@
 				A15C15B122A1812500405E44 /* Frameworks */,
 				A15C15B222A1812500405E44 /* Resources */,
 				D14429A263EF6133152D5E78 /* [CP] Embed Pods Frameworks */,
+				A124F76622AA9D9E00136705 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A124F76122AA9D9E00136705 /* PBXTargetDependency */,
+				A124F77622AAB26400136705 /* PBXTargetDependency */,
 			);
 			name = ScreenFree;
 			productName = ScreenFree;
@@ -263,8 +370,30 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = TrickStewart;
 				TargetAttributes = {
+					A124F75822AA9D9E00136705 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A124F76D22AAB26400136705 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					A15C15B322A1812500405E44 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
 					};
 					A15C15C922A1812600405E44 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -292,11 +421,28 @@
 				A15C15B322A1812500405E44 /* ScreenFree */,
 				A15C15C922A1812600405E44 /* ScreenFreeTests */,
 				A15C15D422A1812600405E44 /* ScreenFreeUITests */,
+				A124F75822AA9D9E00136705 /* ContentBlocker */,
+				A124F76D22AAB26400136705 /* Blocker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A124F75722AA9D9E00136705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A124F75C22AA9D9E00136705 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A124F76C22AAB26400136705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A15C15B222A1812500405E44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +451,7 @@
 				A15C15C422A1812500405E44 /* LaunchScreen.storyboard in Resources */,
 				A15C15C122A1812500405E44 /* Assets.xcassets in Resources */,
 				A15C15BF22A1812500405E44 /* Main.storyboard in Resources */,
+				A124F76922AAAF3500136705 /* blockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +558,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A124F75522AA9D9E00136705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A124F75E22AA9D9E00136705 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A124F76A22AAB26400136705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A15C15B022A1812500405E44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +607,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A124F76122AA9D9E00136705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A124F75822AA9D9E00136705 /* ContentBlocker */;
+			targetProxy = A124F76022AA9D9E00136705 /* PBXContainerItemProxy */;
+		};
+		A124F77622AAB26400136705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A124F76D22AAB26400136705 /* Blocker */;
+			targetProxy = A124F77522AAB26400136705 /* PBXContainerItemProxy */;
+		};
 		A15C15CC22A1812600405E44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A15C15B322A1812500405E44 /* ScreenFree */;
@@ -477,6 +649,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A124F76322AA9D9E00136705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ContentBlocker/ContentBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYD88K876U;
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TrickStewart.ScreenFree.ContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A124F76422AA9D9E00136705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ContentBlocker/ContentBlocker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYD88K876U;
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TrickStewart.ScreenFree.ContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A124F77822AAB26400136705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYD88K876U;
+				INFOPLIST_FILE = Blocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TrickStewart.ScreenFree.Blocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A124F77922AAB26400136705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RYD88K876U;
+				INFOPLIST_FILE = Blocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TrickStewart.ScreenFree.Blocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A15C15DC22A1812600405E44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -595,9 +849,11 @@
 		};
 		A15C15DF22A1812600405E44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B6BE8CA659FEF8C52F68C7B /* Pods-ScreenFree.debug.xcconfig */;
+			baseConfigurationReference = 6B6BE8CA659FEF8C52F68C7B /* Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScreenFree/ScreenFree.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RYD88K876U;
 				INFOPLIST_FILE = ScreenFree/Info.plist;
@@ -616,7 +872,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F723DE4337B7587B53D0DBAC /* Pods-ScreenFree.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScreenFree/ScreenFree.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RYD88K876U;
 				INFOPLIST_FILE = ScreenFree/Info.plist;
@@ -720,6 +978,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A124F76522AA9D9E00136705 /* Build configuration list for PBXNativeTarget "ContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A124F76322AA9D9E00136705 /* Debug */,
+				A124F76422AA9D9E00136705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A124F77A22AAB26400136705 /* Build configuration list for PBXNativeTarget "Blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A124F77822AAB26400136705 /* Debug */,
+				A124F77922AAB26400136705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A15C15AF22A1812500405E44 /* Build configuration list for PBXProject "ScreenFree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -52,9 +52,9 @@ class PostMessageController: UIViewController{
         
         sendNotes.userId = self.user?.deviceId
         
-        sendNotes.noteId = "note1"
-        sendNotes.title = "myNote"
-        sendNotes.content = "hellonew"
+        sendNotes.noteId = "test1"
+        sendNotes.title = "mytest"
+        sendNotes.content = "helloTest"
         sendNotes.creationDate = "date"
         
         //Save a new item
