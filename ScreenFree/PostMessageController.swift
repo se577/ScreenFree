@@ -34,27 +34,22 @@ class PostMessageController: UIViewController{
     }
     
     
-    
+
     
     @IBAction func addNewMessage(_ sender: Any) {
         
-        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: CognitoIdentityUserPoolId)
-        let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialsProvider)
-        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
+        let sendNotes: Notes = Notes()
         
-        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
+        sendNotes.userId = "us-east-1_38156831-c111-4f45-9138-066a59c92b19"
         
-        let notesItem: MyNotes = MyNotes()
+        sendNotes.noteId = "note1"
+        sendNotes.title = "myNote"
+        sendNotes.content = "hello"
+        sendNotes.creationDate = "date"
         
-        notesItem._userId = "1234"
-        
-        notesItem._noteId = self.noteIdInput.text
-        notesItem._title = self.messagetitleInput.text
-        notesItem._content = self.contentInput.text
-        notesItem._creationDate = 12
-    
         //Save a new item
-        dynamoDbObjectMapper.save(notesItem, completionHandler: {
+        dynamoDBObjectMapper.save(sendNotes, completionHandler: {
             (error: Error?) -> Void in
             
             if let error = error {
@@ -63,6 +58,6 @@ class PostMessageController: UIViewController{
             }
             print("An item was saved.")
         })
-        }
-    
+        
+}
 }
