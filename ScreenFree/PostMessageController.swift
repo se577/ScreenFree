@@ -12,6 +12,7 @@ import AWSAppSync
 import AWSCore
 import AWSDynamoDB
 import AWSCognitoIdentityProvider
+import SafariServices
 
 class PostMessageController: UIViewController{
     
@@ -46,6 +47,12 @@ class PostMessageController: UIViewController{
 
     
     @IBAction func addNewMessage(_ sender: Any) {
+        
+        
+        let documentFolder = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.ScreenFree")
+        guard (documentFolder?.appendingPathComponent(Constants.blockerListFilename)) != nil else {
+            return
+        }
         
         let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
         let sendNotes: Notes = Notes()

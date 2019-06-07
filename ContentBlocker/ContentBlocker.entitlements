@@ -5,7 +5,6 @@
 	<key>com.apple.security.application-groups</key>
 	<array>
 		<string>group.ScreenFree</string>
-		<string>group.com.group.ScreenFree</string>
 	</array>
 </dict>
 </plist>
