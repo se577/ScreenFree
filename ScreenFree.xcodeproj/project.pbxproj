@@ -15,6 +15,8 @@
 		A124F76222AA9D9E00136705 /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A124F75922AA9D9E00136705 /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A124F77F22AACB8100136705 /* BlockerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F77E22AACB8100136705 /* BlockerConstants.swift */; };
 		A124F78022AACB8100136705 /* BlockerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F77E22AACB8100136705 /* BlockerConstants.swift */; };
+		A124F78222AACECA00136705 /* customBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F78122AACEC900136705 /* customBlockerList.json */; };
+		A124F78322AACECA00136705 /* customBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F78122AACEC900136705 /* customBlockerList.json */; };
 		A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15B722A1812500405E44 /* AppDelegate.swift */; };
 		A15C15BF22A1812500405E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15BD22A1812500405E44 /* Main.storyboard */; };
 		A15C15C122A1812500405E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C022A1812500405E44 /* Assets.xcassets */; };
@@ -85,6 +87,7 @@
 		A124F76722AAAC7C00136705 /* ScreenFree.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenFree.entitlements; sourceTree = "<group>"; };
 		A124F76822AAACC200136705 /* ContentBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlocker.entitlements; sourceTree = "<group>"; };
 		A124F77E22AACB8100136705 /* BlockerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerConstants.swift; sourceTree = "<group>"; };
+		A124F78122AACEC900136705 /* customBlockerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = customBlockerList.json; path = ScreenFree/customBlockerList.json; sourceTree = "<group>"; };
 		A15C15B422A1812500405E44 /* ScreenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B722A1812500405E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15C15BE22A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -174,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				A191859522A1897D00E835C5 /* awsconfiguration.json */,
+				A124F78122AACEC900136705 /* customBlockerList.json */,
 				A15C15B622A1812500405E44 /* ScreenFree */,
 				A15C15CD22A1812600405E44 /* ScreenFreeTests */,
 				A15C15D822A1812600405E44 /* ScreenFreeUITests */,
@@ -396,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A124F75C22AA9D9E00136705 /* blockerList.json in Resources */,
+				A124F78322AACECA00136705 /* customBlockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +412,7 @@
 				A15C15C422A1812500405E44 /* LaunchScreen.storyboard in Resources */,
 				A15C15C122A1812500405E44 /* Assets.xcassets in Resources */,
 				A15C15BF22A1812500405E44 /* Main.storyboard in Resources */,
+				A124F78222AACECA00136705 /* customBlockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

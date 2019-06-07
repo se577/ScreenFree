@@ -19,7 +19,9 @@ class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling {
             return
         }
         
-        let attachment = NSItemProvider(contentsOf: Bundle.main.url(forResource: "blockerList", withExtension: "json"))!
+        print(jsonURL)
+        
+        let attachment = NSItemProvider(contentsOf: jsonURL)!
         let item = NSExtensionItem()
         item.attachments = [attachment]
         
