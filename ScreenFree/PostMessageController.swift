@@ -15,12 +15,21 @@ import AWSCognitoIdentityProvider
 
 class PostMessageController: UIViewController{
     
+    var response: AWSCognitoIdentityUserGetDetailsResponse?
+    var user: AWSCognitoIdentityUser?
+    var pool: AWSCognitoIdentityUserPool?
+    
     @IBOutlet weak var noteIdInput: UITextField!
     @IBOutlet weak var messagetitleInput: UITextField!
     @IBOutlet weak var contentInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
+        if (self.user == nil) {
+            self.user = self.pool?.currentUser()
+        }
+        self.refresh()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -41,11 +50,11 @@ class PostMessageController: UIViewController{
         let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
         let sendNotes: Notes = Notes()
         
-        sendNotes.userId = "us-east-1_38156831-c111-4f45-9138-066a59c92b19"
+        sendNotes.userId = self.user?.deviceId
         
         sendNotes.noteId = "note1"
         sendNotes.title = "myNote"
-        sendNotes.content = "hello"
+        sendNotes.content = "hellonew"
         sendNotes.creationDate = "date"
         
         //Save a new item
@@ -58,6 +67,15 @@ class PostMessageController: UIViewController{
             }
             print("An item was saved.")
         })
-        
-}
+        }
+    
+    func refresh() {
+        self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
+            DispatchQueue.main.async(execute: {
+                self.response = task.result
+            })
+            return nil
+        }
+    }
+    
 }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ScreenFree/PostMessageController.swift"
-            timestampString = "581605092.941516"
+            timestampString = "581605682.481407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "addNewMessage(_:)"
             landmarkType = "7">
          </BreakpointContent>
