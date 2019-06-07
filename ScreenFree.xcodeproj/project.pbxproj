@@ -17,6 +17,8 @@
 		A124F78022AACB8100136705 /* BlockerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F77E22AACB8100136705 /* BlockerConstants.swift */; };
 		A124F78222AACECA00136705 /* customBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F78122AACEC900136705 /* customBlockerList.json */; };
 		A124F78322AACECA00136705 /* customBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F78122AACEC900136705 /* customBlockerList.json */; };
+		A124F78522AAD6F600136705 /* BlockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F78422AAD6F600136705 /* BlockerViewController.swift */; };
+		A124F78622AAD6F600136705 /* BlockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F78422AAD6F600136705 /* BlockerViewController.swift */; };
 		A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15B722A1812500405E44 /* AppDelegate.swift */; };
 		A15C15BF22A1812500405E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15BD22A1812500405E44 /* Main.storyboard */; };
 		A15C15C122A1812500405E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C022A1812500405E44 /* Assets.xcassets */; };
@@ -87,7 +89,8 @@
 		A124F76722AAAC7C00136705 /* ScreenFree.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenFree.entitlements; sourceTree = "<group>"; };
 		A124F76822AAACC200136705 /* ContentBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlocker.entitlements; sourceTree = "<group>"; };
 		A124F77E22AACB8100136705 /* BlockerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerConstants.swift; sourceTree = "<group>"; };
-		A124F78122AACEC900136705 /* customBlockerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = customBlockerList.json; path = ScreenFree/customBlockerList.json; sourceTree = "<group>"; };
+		A124F78122AACEC900136705 /* customBlockerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customBlockerList.json; sourceTree = "<group>"; };
+		A124F78422AAD6F600136705 /* BlockerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerViewController.swift; sourceTree = "<group>"; };
 		A15C15B422A1812500405E44 /* ScreenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B722A1812500405E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15C15BE22A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -216,6 +219,7 @@
 				A11391E222AA8BB800EBD8FF /* Notes.swift */,
 				A10CA36522A899740069F2A4 /* PostMessageController.swift */,
 				A124F77E22AACB8100136705 /* BlockerConstants.swift */,
+				A124F78422AAD6F600136705 /* BlockerViewController.swift */,
 			);
 			path = ScreenFree;
 			sourceTree = "<group>";
@@ -524,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A124F78022AACB8100136705 /* BlockerConstants.swift in Sources */,
+				A124F78622AAD6F600136705 /* BlockerViewController.swift in Sources */,
 				A124F75E22AA9D9E00136705 /* ContentBlockerRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +546,7 @@
 				A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */,
 				A10CA36622A899740069F2A4 /* PostMessageController.swift in Sources */,
 				A1ADF56222A239080097995A /* Constants.swift in Sources */,
+				A124F78522AAD6F600136705 /* BlockerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

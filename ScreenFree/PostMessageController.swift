@@ -31,6 +31,8 @@ class PostMessageController: UIViewController{
             self.user = self.pool?.currentUser()
         }
         self.refresh()
+        
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -47,25 +49,7 @@ class PostMessageController: UIViewController{
 
     
     @IBAction func addNewMessage(_ sender: Any) {
-        
-        guard let jsonData = try? JSONSerialization.data(withJSONObject: Constants.blockerListFilename, options: .prettyPrinted) else {
-            return
-        }
-        
-        let documentFolder = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.ScreenFree")
-        guard let jsonURL = documentFolder?.appendingPathComponent(Constants.blockerListFilename) else {
-            return
-        }
-            
-        do {
-            try jsonData.write(to: jsonURL)
-        } catch {
-            print("error")
-        }
-        
-        SFContentBlockerManager.reloadContentBlocker(withIdentifier: "TrickStewart.ScreenFree.ContentBlocker", completionHandler: { error in
-            print(error as Any)
-        })
+    
         
         let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
         let sendNotes: Notes = Notes()
