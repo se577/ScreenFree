@@ -180,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				A191859522A1897D00E835C5 /* awsconfiguration.json */,
-				A124F78122AACEC900136705 /* customBlockerList.json */,
 				A15C15B622A1812500405E44 /* ScreenFree */,
 				A15C15CD22A1812600405E44 /* ScreenFreeTests */,
 				A15C15D822A1812600405E44 /* ScreenFreeUITests */,
@@ -205,6 +204,7 @@
 		A15C15B622A1812500405E44 /* ScreenFree */ = {
 			isa = PBXGroup;
 			children = (
+				A124F78122AACEC900136705 /* customBlockerList.json */,
 				A124F76722AAAC7C00136705 /* ScreenFree.entitlements */,
 				A15C15BD22A1812500405E44 /* Main.storyboard */,
 				A15C15B722A1812500405E44 /* AppDelegate.swift */,
@@ -651,6 +651,7 @@
 		A15C15DC22A1812600405E44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -712,6 +713,7 @@
 		A15C15DD22A1812600405E44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

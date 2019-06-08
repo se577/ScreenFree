@@ -56,7 +56,7 @@ class PostMessageController: UIViewController{
         
         sendNotes.userId = self.user?.deviceId
         
-        sendNotes.noteId = "test1"
+        sendNotes.noteId = noteIdInput.text
         sendNotes.title = "mytest"
         sendNotes.content = "helloTest"
         sendNotes.creationDate = "date"

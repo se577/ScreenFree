@@ -11,17 +11,10 @@ import MobileCoreServices
 
 class ContentBlockerRequestHandler: NSObject, NSExtensionRequestHandling {
     
+
     func beginRequest(with context: NSExtensionContext) {
+        let attachment = NSItemProvider(contentsOf: Bundle.main.url(forResource: "blockerList", withExtension: "json"))!
         
-        let documentFolder = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.ScreenFree")
-        
-        guard let jsonURL = documentFolder?.appendingPathComponent(Constants.blockerListFilename) else {
-            return
-        }
-        
-        print(jsonURL)
-        
-        let attachment = NSItemProvider(contentsOf: jsonURL)!
         let item = NSExtensionItem()
         item.attachments = [attachment]
         
