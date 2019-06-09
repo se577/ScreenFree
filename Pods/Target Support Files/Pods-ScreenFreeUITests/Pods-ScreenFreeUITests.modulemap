@@ -1,6 +1,0 @@
-framework module Pods_ScreenFreeUITests {
-  umbrella header "Pods-ScreenFreeUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

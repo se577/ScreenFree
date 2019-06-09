@@ -14,16 +14,4 @@ use_frameworks!
   pod 'AWSAppSync'
   pod 'AWSDynamoDB'
 
-  # Pods for ScreenFree
-
-  target 'ScreenFreeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ScreenFreeUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

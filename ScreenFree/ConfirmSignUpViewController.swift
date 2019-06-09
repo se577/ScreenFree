@@ -21,7 +21,7 @@ class ConfirmSignUpViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.username.text = self.user!.username;
-        self.sentToLabel.text = "Confirmation code sent out"
+        self.sentToLabel.text = "Confirmation code sent"
     }
     
     // MARK: IBActions

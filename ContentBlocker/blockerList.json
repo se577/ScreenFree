@@ -4,7 +4,7 @@
             "type": "block"
         },
         "trigger": {
-            "url-filter": ".*facebook.*"
+            "url-filter": ".*twitter.*"
         }
     }
 ]

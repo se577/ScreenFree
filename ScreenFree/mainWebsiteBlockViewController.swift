@@ -12,19 +12,18 @@ import AWSAppSync
 import AWSCore
 import AWSDynamoDB
 import AWSCognitoIdentityProvider
-import SafariServices
 
-class mainWebsiteBlockViewController: UIViewController, WebsiteDelegate
+class mainWebsiteBlockViewController: UIViewController
 {
-    func sendWebsiteData(type: String) {
-        <#code#>
-    }
-    
+
+    let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
+    let addWebsite: UserWebsitesBlocked = UserWebsitesBlocked()
     
     var facebookEnable: Bool?
     var instaEnable: Bool?
     var tumblrEnable: Bool?
     var twitterEnable: Bool?
+    var blockEnable: Bool?
     
     var response: AWSCognitoIdentityUserGetDetailsResponse?
     var user: AWSCognitoIdentityUser?
@@ -34,6 +33,9 @@ class mainWebsiteBlockViewController: UIViewController, WebsiteDelegate
     @IBOutlet var instaSwitch: UISwitch!
     @IBOutlet var tumblrSwitch: UISwitch!
     @IBOutlet var twitterSwitch: UISwitch!
+    @IBOutlet var blockSwitch: UISwitch!
+    
+    @IBOutlet weak var customWebsite: UITextField!
 
     
     override func viewDidLoad() {
@@ -42,15 +44,63 @@ class mainWebsiteBlockViewController: UIViewController, WebsiteDelegate
         self.instaEnable = true
         self.tumblrEnable = true
         self.twitterEnable = true
+        self.blockEnable = true
         
         self.pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
         if (self.user == nil) {
             self.user = self.pool?.currentUser()
         }
         self.refresh()
-        
     }
-
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setToolbarHidden(true, animated: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setToolbarHidden(false, animated: true)
+    }
+    
+    @IBAction func blockSwitchChanged(_ sender: UISwitch) {
+        if (self.blockEnable == true){
+            
+            addWebsite._userId = self.user?.username
+            addWebsite._customBlockedWebsite? = customWebsite.text!
+            addWebsite._facebookBlockedWebsite = self.facebookEnable! ? "facebook.com" : "null";
+            addWebsite._instaBlockedWebsite = self.instaEnable! ? "instagram" : "null";
+            addWebsite._tumblrBlockedWebsite = self.tumblrEnable! ? "tumblr.com" : "null";
+            addWebsite._twitterBlockedWebsite = self.twitterEnable! ? "twitter.com" : "null";
+            
+            addWebsite._blocked = true
+            
+            //Save a new item
+            dynamoDBObjectMapper.save(addWebsite, completionHandler: {
+                (error: Error?) -> Void in
+                
+                if let error = error {
+                    print("Amazon DynamoDB Save Error: \(error)")
+                    return
+                }
+                print("An item was saved.")
+            })
+           self.blockEnable = false
+        }
+        else {
+            self.blockEnable = true
+            addWebsite._blocked = true
+            dynamoDBObjectMapper.save(addWebsite, completionHandler: {
+                (error: Error?) -> Void in
+                
+                if let error = error {
+                    print("Amazon DynamoDB Save Error: \(error)")
+                    return
+                }
+                print("An item was saved.")
+            })
+        }
+    }
     
     @IBAction func facebookSwitchChanged(_ sender: UISwitch) {
         if (self.facebookEnable == true){
@@ -89,16 +139,15 @@ class mainWebsiteBlockViewController: UIViewController, WebsiteDelegate
     }
     
     
-@IBAction func submitCurrentWebsites(_ sender: AnyObject) {
-    let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
-    let addWebsite: UserWebsitesBlocked = UserWebsitesBlocked()
+    func submitCurrentWebsites() {
     
     addWebsite._userId = self.user?.deviceId
     addWebsite._facebookBlockedWebsite = self.facebookEnable! ? "facebook.com" : "null";
-    addWebsite._instaBlockedWebsite = self.instaEnable! ? "insagram.com" : "null";
+    addWebsite._instaBlockedWebsite = self.instaEnable! ? "instagram" : "null";
     addWebsite._tumblrBlockedWebsite = self.tumblrEnable! ? "tumblr.com" : "null";
     addWebsite._twitterBlockedWebsite = self.twitterEnable! ? "twitter.com" : "null";
-    addWebsite._blocked = false
+    addWebsite._customBlockedWebsite? = customWebsite.text!
+    addWebsite._blocked = true
     
     //Save a new item
     dynamoDBObjectMapper.save(addWebsite, completionHandler: {
@@ -113,6 +162,13 @@ class mainWebsiteBlockViewController: UIViewController, WebsiteDelegate
     
     }
     
+    @IBAction func signOut(_ sender: AnyObject) {
+        self.user?.signOut()
+        self.title = nil
+        self.response = nil
+        self.refresh()
+    }
+    
     func refresh() {
         self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
             DispatchQueue.main.async(execute: {
@@ -121,6 +177,5 @@ class mainWebsiteBlockViewController: UIViewController, WebsiteDelegate
             return nil
         }
     }
-
 
 }

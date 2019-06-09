@@ -1,19 +1,26 @@
 //
-//  UserDetailTableViewController.swift
+//  UserWebsiteBlockedTableViewController.swift
 //  ScreenFree
 //
-//  Created by Patrick Stewart on 6/2/19.
+//  Created by Patrick Stewart on 6/9/19.
 //  Copyright © 2019 TrickStewart. All rights reserved.
 //
 
 import Foundation
+import UIKit
+import AWSCore
+import AWSDynamoDB
 import AWSCognitoIdentityProvider
 
-class UserDetailTableViewController : UITableViewController {
+class UserWebsiteBlockedTableViewController : UITableViewController {
     
     var response: AWSCognitoIdentityUserGetDetailsResponse?
     var user: AWSCognitoIdentityUser?
     var pool: AWSCognitoIdentityUserPool?
+    
+    let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
+    let myUserWebsitesBlocked = UserWebsitesBlocked()
+    let scanWebsites = AWSDynamoDBScanExpression()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,8 +63,16 @@ class UserDetailTableViewController : UITableViewController {
         return cell
     }
     
+    
     // MARK: - IBActions
     
+    @IBAction func signOut(_ sender: AnyObject) {
+        self.user?.signOut()
+        self.title = nil
+        self.response = nil
+        self.tableView.reloadData()
+        self.refresh()
+    }
     
     func refresh() {
         self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
@@ -70,6 +85,5 @@ class UserDetailTableViewController : UITableViewController {
         }
     }
     
+
 }
-
-
