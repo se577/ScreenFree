@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var navigationController: UINavigationController?
     var storyboard: UIStoryboard?
     var rememberDeviceCompletionSource: AWSTaskCompletionSource<NSNumber>?
-    var PostMessageController: PostMessageController?
+    var mainWebsiteBlockViewController: mainWebsiteBlockViewController?
+    var sendWebsiteViewController: sendWebsiteViewController?
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -8,17 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9BA195498F15BA951F480085 /* Pods_ScreenFree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C5835988A10B2DA54B44E5 /* Pods_ScreenFree.framework */; };
-		A10CA36622A899740069F2A4 /* PostMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10CA36522A899740069F2A4 /* PostMessageController.swift */; };
-		A11391E322AA8BB800EBD8FF /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11391E222AA8BB800EBD8FF /* Notes.swift */; };
 		A124F75C22AA9D9E00136705 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F75B22AA9D9E00136705 /* blockerList.json */; };
 		A124F75E22AA9D9E00136705 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F75D22AA9D9E00136705 /* ContentBlockerRequestHandler.swift */; };
 		A124F76222AA9D9E00136705 /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A124F75922AA9D9E00136705 /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A124F77F22AACB8100136705 /* BlockerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F77E22AACB8100136705 /* BlockerConstants.swift */; };
-		A124F78022AACB8100136705 /* BlockerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F77E22AACB8100136705 /* BlockerConstants.swift */; };
 		A124F78222AACECA00136705 /* customBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F78122AACEC900136705 /* customBlockerList.json */; };
 		A124F78322AACECA00136705 /* customBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F78122AACEC900136705 /* customBlockerList.json */; };
-		A124F78522AAD6F600136705 /* BlockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F78422AAD6F600136705 /* BlockerViewController.swift */; };
-		A124F78622AAD6F600136705 /* BlockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124F78422AAD6F600136705 /* BlockerViewController.swift */; };
 		A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15B722A1812500405E44 /* AppDelegate.swift */; };
 		A15C15BF22A1812500405E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15BD22A1812500405E44 /* Main.storyboard */; };
 		A15C15C122A1812500405E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C022A1812500405E44 /* Assets.xcassets */; };
@@ -32,6 +26,9 @@
 		A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55922A209D90097995A /* SignInViewController.swift */; };
 		A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */; };
 		A1ADF56222A239080097995A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF56122A239080097995A /* Constants.swift */; };
+		A1B8E50B22AC7C9800043BD0 /* UserWebsitesBlocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */; };
+		A1B8E50D22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */; };
+		A1B8E50F22AC98C100043BD0 /* sendWebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E50E22AC98C100043BD0 /* sendWebsiteViewController.swift */; };
 		B2F1513F463D5F7E00D1F1AB /* Pods_ScreenFreeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 638B35A4B9A7AB7F2F67E07A /* Pods_ScreenFreeTests.framework */; };
 		B825A04E1C99FCB570E025E1 /* Pods_ScreenFreeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D38BB9C2CB6CC2AF6300AB /* Pods_ScreenFreeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -80,17 +77,13 @@
 		638B35A4B9A7AB7F2F67E07A /* Pods_ScreenFreeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFreeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6BE8CA659FEF8C52F68C7B /* Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Target Support Files/Pods-ScreenFree/Pods-ScreenFree.debug.xcconfig"; sourceTree = "<group>"; };
 		99D38BB9C2CB6CC2AF6300AB /* Pods_ScreenFreeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFreeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A10CA36522A899740069F2A4 /* PostMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMessageController.swift; sourceTree = "<group>"; };
-		A11391E222AA8BB800EBD8FF /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 		A124F75922AA9D9E00136705 /* ContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A124F75B22AA9D9E00136705 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		A124F75D22AA9D9E00136705 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
 		A124F75F22AA9D9E00136705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A124F76722AAAC7C00136705 /* ScreenFree.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenFree.entitlements; sourceTree = "<group>"; };
 		A124F76822AAACC200136705 /* ContentBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlocker.entitlements; sourceTree = "<group>"; };
-		A124F77E22AACB8100136705 /* BlockerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerConstants.swift; sourceTree = "<group>"; };
 		A124F78122AACEC900136705 /* customBlockerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customBlockerList.json; sourceTree = "<group>"; };
-		A124F78422AAD6F600136705 /* BlockerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerViewController.swift; sourceTree = "<group>"; };
 		A15C15B422A1812500405E44 /* ScreenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B722A1812500405E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15C15BE22A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +103,9 @@
 		A1ADF55922A209D90097995A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
 		A1ADF56122A239080097995A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWebsitesBlocked.swift; sourceTree = "<group>"; };
+		A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainWebsiteBlockViewController.swift; sourceTree = "<group>"; };
+		A1B8E50E22AC98C100043BD0 /* sendWebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendWebsiteViewController.swift; sourceTree = "<group>"; };
 		C75E3B1DE92823EA0FAA9C8E /* Pods-ScreenFreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeTests.debug.xcconfig"; path = "Target Support Files/Pods-ScreenFreeTests/Pods-ScreenFreeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C5835988A10B2DA54B44E5 /* Pods_ScreenFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61E5B0EF20F4A837420F5B5 /* Pods-ScreenFreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeUITests.release.xcconfig"; path = "Target Support Files/Pods-ScreenFreeUITests/Pods-ScreenFreeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,14 +208,13 @@
 				A1ADF55722A2098F0097995A /* SignUpViewController.swift */,
 				A1ADF55922A209D90097995A /* SignInViewController.swift */,
 				A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */,
+				A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */,
 				A1ADF56122A239080097995A /* Constants.swift */,
 				A15C15C022A1812500405E44 /* Assets.xcassets */,
 				A15C15C222A1812500405E44 /* LaunchScreen.storyboard */,
 				A15C15C522A1812500405E44 /* Info.plist */,
-				A11391E222AA8BB800EBD8FF /* Notes.swift */,
-				A10CA36522A899740069F2A4 /* PostMessageController.swift */,
-				A124F77E22AACB8100136705 /* BlockerConstants.swift */,
-				A124F78422AAD6F600136705 /* BlockerViewController.swift */,
+				A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */,
+				A1B8E50E22AC98C100043BD0 /* sendWebsiteViewController.swift */,
 			);
 			path = ScreenFree;
 			sourceTree = "<group>";
@@ -527,8 +522,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A124F78022AACB8100136705 /* BlockerConstants.swift in Sources */,
-				A124F78622AAD6F600136705 /* BlockerViewController.swift in Sources */,
 				A124F75E22AA9D9E00136705 /* ContentBlockerRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,16 +530,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A124F77F22AACB8100136705 /* BlockerConstants.swift in Sources */,
+				A1B8E50B22AC7C9800043BD0 /* UserWebsitesBlocked.swift in Sources */,
 				A18B834022A48503006C6B48 /* UserDetailTableViewController.swift in Sources */,
 				A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */,
 				A1ADF55822A2098F0097995A /* SignUpViewController.swift in Sources */,
 				A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */,
-				A11391E322AA8BB800EBD8FF /* Notes.swift in Sources */,
 				A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */,
-				A10CA36622A899740069F2A4 /* PostMessageController.swift in Sources */,
+				A1B8E50D22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift in Sources */,
 				A1ADF56222A239080097995A /* Constants.swift in Sources */,
-				A124F78522AAD6F600136705 /* BlockerViewController.swift in Sources */,
+				A1B8E50F22AC98C100043BD0 /* sendWebsiteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

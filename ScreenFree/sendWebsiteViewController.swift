@@ -1,28 +1,25 @@
 //
-//  PostNote.swift
+//  sendWebsiteViewController.swift
 //  ScreenFree
 //
-//  Created by Patrick Stewart on 6/5/19.
+//  Created by Patrick Stewart on 6/8/19.
 //  Copyright © 2019 TrickStewart. All rights reserved.
 //
-
 import Foundation
 import UIKit
 import AWSAppSync
 import AWSCore
 import AWSDynamoDB
 import AWSCognitoIdentityProvider
-import SafariServices
 
-class PostMessageController: UIViewController{
+
+class sendWebsiteViewController: UIViewController{
+    
+    @IBOutlet weak var submitWebsite: UITextField!
     
     var response: AWSCognitoIdentityUserGetDetailsResponse?
     var user: AWSCognitoIdentityUser?
     var pool: AWSCognitoIdentityUserPool?
-    
-    @IBOutlet weak var noteIdInput: UITextField!
-    @IBOutlet weak var messagetitleInput: UITextField!
-    @IBOutlet weak var contentInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,37 +29,18 @@ class PostMessageController: UIViewController{
         }
         self.refresh()
         
-        
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        self.navigationController?.setToolbarHidden(false, animated: true)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setToolbarHidden(true, animated: true)
-    }
-    
-    
-
-    
-    @IBAction func addNewMessage(_ sender: Any) {
-    
+    @IBAction func sendWebsite(_ sender: AnyObject) {
         
         let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
-        let sendNotes: Notes = Notes()
+        let addWebsite: UserWebsitesBlocked = UserWebsitesBlocked()
         
-        sendNotes.userId = self.user?.deviceId
-        
-        sendNotes.noteId = noteIdInput.text
-        sendNotes.title = "mytest"
-        sendNotes.content = "helloTest"
-        sendNotes.creationDate = "date"
+        addWebsite._userId = self.user?.deviceId
+        addWebsite._blockedWebsite = "facebook"
         
         //Save a new item
-        dynamoDBObjectMapper.save(sendNotes, completionHandler: {
+        dynamoDBObjectMapper.save(addWebsite, completionHandler: {
             (error: Error?) -> Void in
             
             if let error = error {
@@ -71,7 +49,9 @@ class PostMessageController: UIViewController{
             }
             print("An item was saved.")
         })
-        }
+    
+    }
+    
     
     func refresh() {
         self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
@@ -81,5 +61,5 @@ class PostMessageController: UIViewController{
             return nil
         }
     }
-    
+
 }
