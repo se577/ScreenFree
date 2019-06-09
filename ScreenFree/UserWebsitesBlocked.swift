@@ -19,8 +19,11 @@ class UserWebsitesBlocked: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     @objc var _userId: String?
     @objc var _blocked: NSNumber?
-    @objc var _blockedWebsites: [String]?
     @objc var _customBlockedWebsite: String?
+    @objc var _facebookBlockedWebsite: String?
+    @objc var _instaBlockedWebsite: String?
+    @objc var _tumblrBlockedWebsite: String?
+    @objc var _twitterBlockedWebsite: String?
     
     class func dynamoDBTableName() -> String {
         
@@ -36,8 +39,11 @@ class UserWebsitesBlocked: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
         return [
             "_userId" : "userId",
             "_blocked" : "blocked",
-            "_blockedWebsites" : "blockedWebsites",
             "_customBlockedWebsite" : "customBlockedWebsite",
+            "_facebookBlockedWebsite" : "facebookBlockedWebsite",
+            "_instaBlockedWebsite" : "instaBlockedWebsite",
+            "_tumblrBlockedWebsite" : "tumblrBlockedWebsite",
+            "_twitterBlockedWebsite" : "twitterBlockedWebsite",
         ]
     }
 }

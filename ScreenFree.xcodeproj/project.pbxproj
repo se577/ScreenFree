@@ -13,6 +13,7 @@
 		A124F76222AA9D9E00136705 /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A124F75922AA9D9E00136705 /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A124F78222AACECA00136705 /* customBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F78122AACEC900136705 /* customBlockerList.json */; };
 		A124F78322AACECA00136705 /* customBlockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = A124F78122AACEC900136705 /* customBlockerList.json */; };
+		A13D0DBF22AD6BEF002333A5 /* WebsiteDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D0DBE22AD6BEF002333A5 /* WebsiteDelegate.swift */; };
 		A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C15B722A1812500405E44 /* AppDelegate.swift */; };
 		A15C15BF22A1812500405E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15BD22A1812500405E44 /* Main.storyboard */; };
 		A15C15C122A1812500405E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C022A1812500405E44 /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		A124F76722AAAC7C00136705 /* ScreenFree.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenFree.entitlements; sourceTree = "<group>"; };
 		A124F76822AAACC200136705 /* ContentBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentBlocker.entitlements; sourceTree = "<group>"; };
 		A124F78122AACEC900136705 /* customBlockerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customBlockerList.json; sourceTree = "<group>"; };
+		A13D0DBE22AD6BEF002333A5 /* WebsiteDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDelegate.swift; sourceTree = "<group>"; };
 		A15C15B422A1812500405E44 /* ScreenFree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenFree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15C15B722A1812500405E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15C15BE22A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -212,9 +214,10 @@
 				A15C15C022A1812500405E44 /* Assets.xcassets */,
 				A15C15C222A1812500405E44 /* LaunchScreen.storyboard */,
 				A15C15C522A1812500405E44 /* Info.plist */,
-				A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */,
 				A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */,
+				A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */,
 				A1B8E50E22AC98C100043BD0 /* sendWebsiteViewController.swift */,
+				A13D0DBE22AD6BEF002333A5 /* WebsiteDelegate.swift */,
 			);
 			path = ScreenFree;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13D0DBF22AD6BEF002333A5 /* WebsiteDelegate.swift in Sources */,
 				A1B8E50B22AC7C9800043BD0 /* UserWebsitesBlocked.swift in Sources */,
 				A18B834022A48503006C6B48 /* UserDetailTableViewController.swift in Sources */,
 				A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */,

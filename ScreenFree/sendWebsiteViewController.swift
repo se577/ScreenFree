@@ -15,11 +15,26 @@ import AWSCognitoIdentityProvider
 
 class sendWebsiteViewController: UIViewController{
     
+    /// The text property for "Passing data forward with properties"
+    var text:String = ""
+    
+    /// The view controller property for "Passing data back with properties"
+    var mainWebsiteBlockViewController:mainWebsiteBlockViewController?
+    
+    /// The delegate property for "Passing data back with delegation"
+    var delegate:WebsiteDelegate?
+    
+    /// Closure property for "Passing Data Back With A Closure"
+    var completionHandler:((String) -> Int)?
+    
+    
     @IBOutlet weak var submitWebsite: UITextField!
     
     var response: AWSCognitoIdentityUserGetDetailsResponse?
     var user: AWSCognitoIdentityUser?
     var pool: AWSCognitoIdentityUserPool?
+    let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
+    let addWebsite: UserWebsitesBlocked = UserWebsitesBlocked()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +47,9 @@ class sendWebsiteViewController: UIViewController{
     }
     
     @IBAction func sendWebsite(_ sender: AnyObject) {
-        
-        let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.default()
-        let addWebsite: UserWebsitesBlocked = UserWebsitesBlocked()
-        
         addWebsite._userId = self.user?.deviceId
         addWebsite._customBlockedWebsite? = submitWebsite.text!
-        addWebsite._blockedWebsites = ["Facebook.com", "Twitter.com", "Tumblr.com", "Instagram.com"]
+        addWebsite._customBlockedWebsite = "reddit.com"
         addWebsite._blocked = true
         
         //Save a new item
