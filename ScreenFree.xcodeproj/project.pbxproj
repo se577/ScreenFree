@@ -208,12 +208,12 @@
 				A1ADF55722A2098F0097995A /* SignUpViewController.swift */,
 				A1ADF55922A209D90097995A /* SignInViewController.swift */,
 				A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */,
-				A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */,
 				A1ADF56122A239080097995A /* Constants.swift */,
 				A15C15C022A1812500405E44 /* Assets.xcassets */,
 				A15C15C222A1812500405E44 /* LaunchScreen.storyboard */,
 				A15C15C522A1812500405E44 /* Info.plist */,
 				A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */,
+				A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */,
 				A1B8E50E22AC98C100043BD0 /* sendWebsiteViewController.swift */,
 			);
 			path = ScreenFree;

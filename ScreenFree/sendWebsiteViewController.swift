@@ -37,7 +37,9 @@ class sendWebsiteViewController: UIViewController{
         let addWebsite: UserWebsitesBlocked = UserWebsitesBlocked()
         
         addWebsite._userId = self.user?.deviceId
-        addWebsite._blockedWebsite = "facebook"
+        addWebsite._customBlockedWebsite? = submitWebsite.text!
+        addWebsite._blockedWebsites = ["Facebook.com", "Twitter.com", "Tumblr.com", "Instagram.com"]
+        addWebsite._blocked = true
         
         //Save a new item
         dynamoDBObjectMapper.save(addWebsite, completionHandler: {

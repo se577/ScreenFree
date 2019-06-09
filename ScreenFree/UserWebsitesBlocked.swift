@@ -18,7 +18,9 @@ import AWSDynamoDB
 class UserWebsitesBlocked: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     @objc var _userId: String?
-    @objc var _blockedWebsite: String?
+    @objc var _blocked: NSNumber?
+    @objc var _blockedWebsites: [String]?
+    @objc var _customBlockedWebsite: String?
     
     class func dynamoDBTableName() -> String {
         
@@ -33,7 +35,9 @@ class UserWebsitesBlocked: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {
         return [
             "_userId" : "userId",
-            "_blockedWebsite" : "blockedWebsite",
+            "_blocked" : "blocked",
+            "_blockedWebsites" : "blockedWebsites",
+            "_customBlockedWebsite" : "customBlockedWebsite",
         ]
     }
 }
