@@ -22,12 +22,12 @@
 		A191859622A1897D00E835C5 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A191859522A1897D00E835C5 /* awsconfiguration.json */; };
 		A1ADF55822A2098F0097995A /* UserSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55722A2098F0097995A /* UserSignUpViewController.swift */; };
 		A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55922A209D90097995A /* SignInViewController.swift */; };
-		A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */; };
+		A1ADF56022A238E60097995A /* UserConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55F22A238E60097995A /* UserConfirmSignUpViewController.swift */; };
 		A1ADF56222A239080097995A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF56122A239080097995A /* Constants.swift */; };
 		A1B8E50B22AC7C9800043BD0 /* UserWebsitesBlocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */; };
 		A1B8E50D22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */; };
 		A1C7779522ADB428002C8994 /* ForgotUserPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7779422ADB428002C8994 /* ForgotUserPasswordViewController.swift */; };
-		A1C7779722ADB509002C8994 /* ConfirmForgotUserPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7779622ADB509002C8994 /* ConfirmForgotUserPasswordViewController.swift */; };
+		A1C7779722ADB509002C8994 /* UserConfirmForgotUserPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C7779622ADB509002C8994 /* UserConfirmForgotUserPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,12 +78,12 @@
 		A191859522A1897D00E835C5 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		A1ADF55722A2098F0097995A /* UserSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpViewController.swift; sourceTree = "<group>"; };
 		A1ADF55922A209D90097995A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
+		A1ADF55F22A238E60097995A /* UserConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfirmSignUpViewController.swift; sourceTree = "<group>"; };
 		A1ADF56122A239080097995A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWebsitesBlocked.swift; sourceTree = "<group>"; };
 		A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainWebsiteBlockViewController.swift; sourceTree = "<group>"; };
 		A1C7779422ADB428002C8994 /* ForgotUserPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotUserPasswordViewController.swift; sourceTree = "<group>"; };
-		A1C7779622ADB509002C8994 /* ConfirmForgotUserPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmForgotUserPasswordViewController.swift; sourceTree = "<group>"; };
+		A1C7779622ADB509002C8994 /* UserConfirmForgotUserPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfirmForgotUserPasswordViewController.swift; sourceTree = "<group>"; };
 		C75E3B1DE92823EA0FAA9C8E /* Pods-ScreenFreeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeTests.debug.xcconfig"; path = "Target Support Files/Pods-ScreenFreeTests/Pods-ScreenFreeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C5835988A10B2DA54B44E5 /* Pods_ScreenFree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenFree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61E5B0EF20F4A837420F5B5 /* Pods-ScreenFreeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenFreeUITests.release.xcconfig"; path = "Target Support Files/Pods-ScreenFreeUITests/Pods-ScreenFreeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 				A15C15B722A1812500405E44 /* AppDelegate.swift */,
 				A1ADF55722A2098F0097995A /* UserSignUpViewController.swift */,
 				A1ADF55922A209D90097995A /* SignInViewController.swift */,
-				A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */,
+				A1ADF55F22A238E60097995A /* UserConfirmSignUpViewController.swift */,
 				A1ADF56122A239080097995A /* Constants.swift */,
 				A15C15C022A1812500405E44 /* Assets.xcassets */,
 				A15C15C222A1812500405E44 /* LaunchScreen.storyboard */,
@@ -173,7 +173,7 @@
 				A124F78122AACEC900136705 /* customBlockerList.json */,
 				A124F76722AAAC7C00136705 /* ScreenFree.entitlements */,
 				A1C7779422ADB428002C8994 /* ForgotUserPasswordViewController.swift */,
-				A1C7779622ADB509002C8994 /* ConfirmForgotUserPasswordViewController.swift */,
+				A1C7779622ADB509002C8994 /* UserConfirmForgotUserPasswordViewController.swift */,
 			);
 			path = ScreenFree;
 			sourceTree = "<group>";
@@ -365,9 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C7779722ADB509002C8994 /* ConfirmForgotUserPasswordViewController.swift in Sources */,
+				A1C7779722ADB509002C8994 /* UserConfirmForgotUserPasswordViewController.swift in Sources */,
 				A1B8E50B22AC7C9800043BD0 /* UserWebsitesBlocked.swift in Sources */,
-				A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */,
+				A1ADF56022A238E60097995A /* UserConfirmSignUpViewController.swift in Sources */,
 				A13D0DD022AD8D00002333A5 /* UserWebsiteBlockedTableViewController.swift in Sources */,
 				A1ADF55822A2098F0097995A /* UserSignUpViewController.swift in Sources */,
 				A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */,

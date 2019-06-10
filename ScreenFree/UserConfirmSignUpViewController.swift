@@ -9,7 +9,7 @@
 import Foundation
 import AWSCognitoIdentityProvider
 
-class ConfirmSignUpViewController : UIViewController {
+class UserConfirmSignUpViewController : UIViewController {
     
     var sentTo: String?
     var user: AWSCognitoIdentityUser?

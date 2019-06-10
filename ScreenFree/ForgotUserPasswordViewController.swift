@@ -26,7 +26,7 @@ class ForgotUserPasswordViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let newPasswordViewController = segue.destination as? ConfirmForgotUserPasswordViewController {
+        if let newPasswordViewController = segue.destination as? UserConfirmForgotUserPasswordViewController {
             newPasswordViewController.user = self.user
         }
     }

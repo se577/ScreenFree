@@ -50,7 +50,7 @@ class UserSignUpViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let signUpConfirmationViewController = segue.destination as? ConfirmSignUpViewController {
+        if let signUpConfirmationViewController = segue.destination as? UserConfirmSignUpViewController {
             signUpConfirmationViewController.sentTo = self.sentTo
             signUpConfirmationViewController.user = self.pool?.getUser(self.username.text!)
         }

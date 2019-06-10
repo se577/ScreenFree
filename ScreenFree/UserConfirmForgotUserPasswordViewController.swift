@@ -9,7 +9,7 @@
 import Foundation
 import AWSCognitoIdentityProvider
 
-class ConfirmForgotUserPasswordViewController: UIViewController {
+class UserConfirmForgotUserPasswordViewController: UIViewController {
     
     var user: AWSCognitoIdentityUser?
     

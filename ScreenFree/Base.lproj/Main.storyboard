@@ -312,7 +312,7 @@
         <!--Confirm SignUp-->
         <scene sceneID="6kS-72-Q9p">
             <objects>
-                <viewController id="Njg-lg-nJn" userLabel="Confirm SignUp" customClass="ConfirmSignUpViewController" customModule="ScreenFree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Njg-lg-nJn" userLabel="Confirm SignUp" customClass="UserConfirmForgotUserPasswordViewController" customModule="ScreenFree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="knp-p7-lKv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,7 +423,7 @@
         <!--Forgot Password-->
         <scene sceneID="ZI0-vO-KLV">
             <objects>
-                <viewController id="AiM-wK-tQc" userLabel="Forgot Password" customClass="ForgotUserPasswordViewController" customModule="ScreenFree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AiM-wK-tQc" userLabel="Forgot Password" customClass="UserConfirmForgotUserPasswordViewController" customModule="ScreenFree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oX6-mx-g62"/>
                         <viewControllerLayoutGuide type="bottom" id="PNY-7y-wRB"/>
@@ -485,7 +485,7 @@
         <!--Forgot Password-->
         <scene sceneID="IEj-oq-e2i">
             <objects>
-                <viewController id="2R2-KV-VDt" userLabel="Forgot Password" customClass="ConfirmForgotUserPasswordViewController" customModule="ScreenFree" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2R2-KV-VDt" userLabel="Forgot Password" customClass="UserConfirmForgotUserPasswordViewController" customModule="ScreenFree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="May-K9-bk9"/>
                         <viewControllerLayoutGuide type="bottom" id="7aF-jY-0Z4"/>
