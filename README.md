@@ -26,6 +26,10 @@ The features will include:<br />
 **Architectural Diagrams**<br />
 *Note these have changed after implementing the architecture and can be found in the directory and can be found in the "Legacy Architecure Diagrams" directory
 
+**Revised Architecture Diagrams** <br />
+The app no follow the AWS cloud computing standard mobile architecture pattern as best shown here <br />
+![alt text](https://github.com/se577/ScreenFree/blob/master/awsCognitoArchitecture.png?raw=true) <br />
+
 **Design Patterns and Tactics**:<br />
 Our group will be using the Multi-Tier design pattern for our app. The app follows a user login authentication data flow from client, web, server, and back-end tier in order to complete tasks and requests.  We will follow a standard user login key development with a back end database that will store or app data for tasks as well as user metrics. <br />
 
