@@ -1,0 +1,23 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "screenfree-env-20190531115653-authRole",
+            "UnauthRoleArn": "arn:aws:iam::922239455418:role/screenfree-env-20190531115653-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::922239455418:role/screenfree-env-20190531115653-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "screenfree-env-20190531115653-deployment",
+            "UnauthRoleName": "screenfree-env-20190531115653-unauthRole",
+            "StackName": "screenfree-env-20190531115653",
+            "StackId": "arn:aws:cloudformation:us-east-1:922239455418:stack/screenfree-env-20190531115653/b5fdf300-83bc-11e9-a823-12f81177eb92"
+        }
+    },
+    "api": {
+        "screenfree": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "securityType": "API_KEY"
+            }
+        }
+    }
+}

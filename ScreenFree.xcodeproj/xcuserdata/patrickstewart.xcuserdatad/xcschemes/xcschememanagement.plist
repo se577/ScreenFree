@@ -4,10 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ContentBlocker.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
 		<key>ScreenFree.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A124F75822AA9D9E00136705</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A13D0DC322AD747E002333A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A15C15B322A1812500405E44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A15C15C922A1812600405E44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A15C15D422A1812600405E44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
