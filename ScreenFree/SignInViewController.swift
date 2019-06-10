@@ -22,7 +22,6 @@ class SignInViewController: UIViewController {
         super.viewWillAppear(animated)
         self.password.text = nil
         self.password.returnKeyType = .done
-        self.username.text = usernameText
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     

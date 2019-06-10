@@ -49,10 +49,11 @@ class mainWebsiteBlockViewController: UIViewController
         self.pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
         if (self.user == nil) {
             self.user = self.pool?.currentUser()
+            self.title = self.user?.username
         }
         self.refresh()
         
-        self.title = self.user?.username
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -62,6 +63,7 @@ class mainWebsiteBlockViewController: UIViewController
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.title = self.user?.username
         self.navigationController?.setToolbarHidden(false, animated: true)
     }
     
