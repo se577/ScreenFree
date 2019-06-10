@@ -24,17 +24,30 @@ The features will include:<br />
 -Share Metric Results with other users <br />
 
 **Architectural Diagrams**<br />
-
-![alt text](https://github.com/se577/ScreenFree/blob/master/ScreenFree_Design_Storyboard.png?raw=true) <br />
-![alt text](https://github.com/se577/ScreenFree/blob/master/ScreenFree_Design_Login.png?raw=true) <br />
-![alt text](https://github.com/se577/ScreenFree/blob/master/ScreenFree_Design_Metric.png?raw=true) <br />
-![alt text](https://github.com/se577/ScreenFree/blob/master/ScreenFree_Design_Add_Remove.png?raw=true) <br />
-![alt text](https://github.com/se577/ScreenFree/blob/master/ScreenFree_Design_Monitoring.png?raw=true) <br />
-![alt text](https://github.com/se577/ScreenFree/blob/master/ScreenFree_Design_Multi_tier.png?raw=true) <br />
-
+*Note these have changed after implementing the architecture and can be found in the directory and can be found in the "Legacy Architecure Diagrams" directory
 
 **Design Patterns and Tactics**:<br />
 Our group will be using the Multi-Tier design pattern for our app. The app follows a user login authentication data flow from client, web, server, and back-end tier in order to complete tasks and requests.  We will follow a standard user login key development with a back end database that will store or app data for tasks as well as user metrics. <br />
 
 Users will be able to create a profile that will store URL domains and times they wish to have them blocked. The app will also keep metrics such as total time the user has had the app blocked and display the information in the app in a chart or graph. All the processes will follow the pattern of user key to data item stored in the database. The multi-tier pattern will facilitate and define the interfaces of all the requests our app can make such as adding/removing domains to the user's lists. The design pattern also caters to our need to decouple the back end to the app user front end. The actual URL blocking will be done locally on the app as the database and servers only tasks will be supplying the URLs and user information.<br />
 
+**Instructions for building and Running**:<br />
+A user must have a MAC computer with Xcode 10 installed  <br />
+The general swift envirnoment setup instructions can be found on AWS here: <br />
+https://docs.aws.amazon.com/aws-mobile/latest/developerguide/mobile-hub-getting-started.html#mobile-hub-add-aws-mobile-sdk-connect-to-your-backend <br />
+
+For this app you need to install AWS Prerequisites with Cocoapods from a terminal <br />
+
+Open a terminal window and use the run: <br />
+sudo gem install cocoapods <br />
+
+Now navigate to this xcode project directory that contains .xcodeproj and run: <br />
+pod setup
+
+I have include my podfile so you should then only need to run the following command to add the pod files to your project: <br />
+
+pod install --repo-update  <br />
+
+Now you you can open the xcode project using the .xcworkspace file NOT .xcodeproj file <br />
+
+Within Xcode do a clean and a build then select the iPhone 8 as the simulator and run the project.<br />
