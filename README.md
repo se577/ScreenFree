@@ -1,5 +1,8 @@
 # **ScreenFree**
 
+**ScreenFree Demo:**
+A demo of Screenfree can from this google drive download link: https://drive.google.com/open?id=1w8neWx0greyahXlaEKPZHVTkpP-XVCH7
+
 **Mission Statement:** Our mission is to help enrich the daily lives of individuals and communities through the responsible use of social technology. At ScreenFree, we value organic relationships and believe that it is crucial to the wellbeing of our families and communities. With the advent of social media, humanity is redefining what it means to communicate with each other. ScreenFree works to embrace technology as the solution to finding the balance between physical and digital personal interactions. 
 
 **Problem Statement:** Communities are growing more impersonal as the daily use of social technology continues to increase. The demand of a solution to creating and maintaining more meaningful relationships grows as more social media users are leaving the platforms in favor of face to face interactions. ScreenFree is the technological solution to helping the user form and maintain better social media habits.  <br />
