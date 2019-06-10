@@ -31,7 +31,7 @@ class ForgotUserPasswordViewController: UIViewController {
         }
     }
     
-    // MARK :- IBActions
+    // IBActions
     
     // handle forgot password
     @IBAction func forgotPassword(_ sender: AnyObject) {

@@ -9,7 +9,7 @@
 import Foundation
 import AWSCognitoIdentityProvider
 
-class SignUpViewController: UIViewController {
+class UserSignUpViewController: UIViewController {
     
     var pool: AWSCognitoIdentityUserPool?
     var sentTo: String?
@@ -64,7 +64,7 @@ class SignUpViewController: UIViewController {
         guard let userNameValue = self.username.text, !userNameValue.isEmpty,
             let passwordValue = self.password.text, !passwordValue.isEmpty else {
                 let alertController = UIAlertController(title: "Missing Required Fields",
-                                                        message: "Username / Password are required for registration.",
+                                                        message: "Need username and password.",
                                                         preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 alertController.addAction(okAction)
@@ -79,14 +79,14 @@ class SignUpViewController: UIViewController {
             if let phoneValue = self.phone.text, !phoneValue.isEmpty {
                 let phone = AWSCognitoIdentityUserAttributeType()
                 phone?.name = "phone_number"
-                phone?.value = "+12707804460"
+                phone?.value = phoneValue
                 attributes.append(phone!)
             }
         }
         if let emailValue = self.email.text, !emailValue.isEmpty {
             let email = AWSCognitoIdentityUserAttributeType()
             email?.name = "email"
-            email?.value = "patrick.stewart101@gmail.com"
+            email?.value = emailValue
             attributes.append(email!)
         }
         

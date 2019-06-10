@@ -18,10 +18,9 @@
 		A15C15BF22A1812500405E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15BD22A1812500405E44 /* Main.storyboard */; };
 		A15C15C122A1812500405E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C022A1812500405E44 /* Assets.xcassets */; };
 		A15C15C422A1812500405E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15C15C222A1812500405E44 /* LaunchScreen.storyboard */; };
-		A18B834022A48503006C6B48 /* UserDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B833F22A48502006C6B48 /* UserDetailTableViewController.swift */; };
 		A19000D922A324920080D43B /* AWSUserPoolsSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19000D822A324920080D43B /* AWSUserPoolsSignIn.framework */; };
 		A191859622A1897D00E835C5 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A191859522A1897D00E835C5 /* awsconfiguration.json */; };
-		A1ADF55822A2098F0097995A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55722A2098F0097995A /* SignUpViewController.swift */; };
+		A1ADF55822A2098F0097995A /* UserSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55722A2098F0097995A /* UserSignUpViewController.swift */; };
 		A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55922A209D90097995A /* SignInViewController.swift */; };
 		A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */; };
 		A1ADF56222A239080097995A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1ADF56122A239080097995A /* Constants.swift */; };
@@ -75,10 +74,9 @@
 		A15C15C022A1812500405E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A15C15C322A1812500405E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A15C15C522A1812500405E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A18B833F22A48502006C6B48 /* UserDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewController.swift; sourceTree = "<group>"; };
 		A19000D822A324920080D43B /* AWSUserPoolsSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSUserPoolsSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A191859522A1897D00E835C5 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		A1ADF55722A2098F0097995A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A1ADF55722A2098F0097995A /* UserSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignUpViewController.swift; sourceTree = "<group>"; };
 		A1ADF55922A209D90097995A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
 		A1ADF56122A239080097995A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -163,10 +161,9 @@
 				A15C15BD22A1812500405E44 /* Main.storyboard */,
 				A13D0DCF22AD8D00002333A5 /* UserWebsiteBlockedTableViewController.swift */,
 				A1B8E50C22AC8DB500043BD0 /* mainWebsiteBlockViewController.swift */,
-				A18B833F22A48502006C6B48 /* UserDetailTableViewController.swift */,
 				A1B8E50A22AC7C9700043BD0 /* UserWebsitesBlocked.swift */,
 				A15C15B722A1812500405E44 /* AppDelegate.swift */,
-				A1ADF55722A2098F0097995A /* SignUpViewController.swift */,
+				A1ADF55722A2098F0097995A /* UserSignUpViewController.swift */,
 				A1ADF55922A209D90097995A /* SignInViewController.swift */,
 				A1ADF55F22A238E60097995A /* ConfirmSignUpViewController.swift */,
 				A1ADF56122A239080097995A /* Constants.swift */,
@@ -370,10 +367,9 @@
 			files = (
 				A1C7779722ADB509002C8994 /* ConfirmForgotUserPasswordViewController.swift in Sources */,
 				A1B8E50B22AC7C9800043BD0 /* UserWebsitesBlocked.swift in Sources */,
-				A18B834022A48503006C6B48 /* UserDetailTableViewController.swift in Sources */,
 				A1ADF56022A238E60097995A /* ConfirmSignUpViewController.swift in Sources */,
 				A13D0DD022AD8D00002333A5 /* UserWebsiteBlockedTableViewController.swift in Sources */,
-				A1ADF55822A2098F0097995A /* SignUpViewController.swift in Sources */,
+				A1ADF55822A2098F0097995A /* UserSignUpViewController.swift in Sources */,
 				A15C15B822A1812500405E44 /* AppDelegate.swift in Sources */,
 				A1ADF55A22A209D90097995A /* SignInViewController.swift in Sources */,
 				A1C7779522ADB428002C8994 /* ForgotUserPasswordViewController.swift in Sources */,

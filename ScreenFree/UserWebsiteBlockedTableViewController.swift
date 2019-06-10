@@ -42,7 +42,7 @@ class UserWebsiteBlockedTableViewController : UITableViewController {
         self.navigationController?.setToolbarHidden(false, animated: true)
     }
     
-    // MARK: - Table view data source
+   //Table 
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -64,7 +64,7 @@ class UserWebsiteBlockedTableViewController : UITableViewController {
     }
     
     
-    // MARK: - IBActions
+   //IBActions
     
     @IBAction func signOut(_ sender: AnyObject) {
         self.user?.signOut()

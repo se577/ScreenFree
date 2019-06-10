@@ -20,7 +20,7 @@ class ConfirmForgotUserPasswordViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    // MARK: - IBActions
+    // IBActions
     
     @IBAction func updatePassword(_ sender: AnyObject) {
         guard let confirmationCodeValue = self.confirmationCode.text, !confirmationCodeValue.isEmpty else {
@@ -34,7 +34,7 @@ class ConfirmForgotUserPasswordViewController: UIViewController {
             return
         }
         
-        //confirm forgot password with input from ui.
+        //confirm forgot password 
         self.user?.confirmForgotPassword(confirmationCodeValue, password: self.proposedPassword.text!).continueWith {[weak self] (task: AWSTask) -> AnyObject? in
             guard let strongSelf = self else { return nil }
             DispatchQueue.main.async(execute: {

@@ -24,9 +24,9 @@ class ConfirmSignUpViewController : UIViewController {
         self.sentToLabel.text = "Confirmation code sent"
     }
     
-    // MARK: IBActions
+    // IBActions
     
-    // handle confirm sign up
+    // confirm sign up
     @IBAction func confirm(_ sender: AnyObject) {
         guard let confirmationCodeValue = self.code.text, !confirmationCodeValue.isEmpty else {
             let alertController = UIAlertController(title: "Confirmation code missing.",

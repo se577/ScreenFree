@@ -51,6 +51,8 @@ class mainWebsiteBlockViewController: UIViewController
             self.user = self.pool?.currentUser()
         }
         self.refresh()
+        
+        self.title = self.user?.username
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -66,10 +68,16 @@ class mainWebsiteBlockViewController: UIViewController
     @IBAction func blockSwitchChanged(_ sender: UISwitch) {
         if (self.blockEnable == true){
             
+            let date = Date()
+            let format = DateFormatter()
+            format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            let formattedDate = format.string(from: date)
+            
+            addWebsite._blockStartDate = formattedDate
             addWebsite._userId = self.user?.username
-            addWebsite._customBlockedWebsite? = customWebsite.text!
+            addWebsite._customBlockedWebsite = customWebsite.text!
             addWebsite._facebookBlockedWebsite = self.facebookEnable! ? "facebook.com" : "null";
-            addWebsite._instaBlockedWebsite = self.instaEnable! ? "instagram" : "null";
+            addWebsite._instaBlockedWebsite = self.instaEnable! ? "instagram.com" : "null";
             addWebsite._tumblrBlockedWebsite = self.tumblrEnable! ? "tumblr.com" : "null";
             addWebsite._twitterBlockedWebsite = self.twitterEnable! ? "twitter.com" : "null";
             
@@ -89,7 +97,14 @@ class mainWebsiteBlockViewController: UIViewController
         }
         else {
             self.blockEnable = true
-            addWebsite._blocked = true
+            
+            let date = Date()
+            let format = DateFormatter()
+            format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            let formattedDate = format.string(from: date)
+            
+            addWebsite._blockStopDate = formattedDate
+            addWebsite._blocked = false
             dynamoDBObjectMapper.save(addWebsite, completionHandler: {
                 (error: Error?) -> Void in
                 
@@ -143,7 +158,7 @@ class mainWebsiteBlockViewController: UIViewController
     
     addWebsite._userId = self.user?.deviceId
     addWebsite._facebookBlockedWebsite = self.facebookEnable! ? "facebook.com" : "null";
-    addWebsite._instaBlockedWebsite = self.instaEnable! ? "instagram" : "null";
+    addWebsite._instaBlockedWebsite = self.instaEnable! ? "instagram.com" : "null";
     addWebsite._tumblrBlockedWebsite = self.tumblrEnable! ? "tumblr.com" : "null";
     addWebsite._twitterBlockedWebsite = self.twitterEnable! ? "twitter.com" : "null";
     addWebsite._customBlockedWebsite? = customWebsite.text!
