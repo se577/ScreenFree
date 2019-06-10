@@ -30,7 +30,7 @@ The features will include:<br />
 *Note these have changed after implementing the architecture and can be found in the directory and can be found in the "Legacy Architecure Diagrams" directory
 
 **Revised Architecture Diagrams** <br />
-The app no follow the AWS cloud computing standard mobile architecture pattern as best shown here <br />
+The app now follows the AWS cloud computing standard mobile architecture pattern as best shown here <br />
 ![alt text](https://github.com/se577/ScreenFree/blob/master/awsCognitoArchitecture.png?raw=true) <br />
 
 **Design Patterns and Tactics**:<br />
