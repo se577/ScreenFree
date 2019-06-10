@@ -45,7 +45,6 @@ Now navigate to this xcode project directory that contains .xcodeproj and run: <
 pod setup
 
 I have include my podfile so you should then only need to run the following command to add the pod files to your project: <br />
-
 pod install --repo-update  <br />
 
 Now you you can open the xcode project using the .xcworkspace file NOT .xcodeproj file <br />
